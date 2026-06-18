@@ -65,7 +65,28 @@
                 "value": []
             },
             "param_table": {
-                "value": []
+                "value": [
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "importAccount"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "on-import"
+                        }
+                    }
+                ]
             },
             "tags": {
                 "value": []
@@ -77,8 +98,8 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
-                "grid_x_int": 2.6,
-                "grid_y_int": 1.4,
+                "grid_x_int": 3,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -89,8 +110,8 @@
             },
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
-                "grid_x_int": 3.6,
-                "grid_y_int": 1.4,
+                "grid_x_int": 4,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -102,8 +123,8 @@
             "11111111-1111-1111-1111-000000000002": {
                 "error": {},
                 "errors": {},
-                "grid_x_int": 4.6,
-                "grid_y_int": 1.4,
+                "grid_x_int": 5,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -115,8 +136,8 @@
             "11111111-1111-1111-1111-000000000003": {
                 "error": {},
                 "errors": {},
-                "grid_x_int": 5.6,
-                "grid_y_int": 1.4,
+                "grid_x_int": 6,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -128,8 +149,8 @@
             "11111111-1111-1111-1111-000000000004": {
                 "error": {},
                 "errors": {},
-                "grid_x_int": 6.6,
-                "grid_y_int": 1.4,
+                "grid_x_int": 7,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -159,8 +180,8 @@
                         "value": {
                             "label": {
                                 "expression": false,
-                                "label": "shared/ON FS Syndigo Account",
-                                "value": "ON FS Syndigo Account"
+                                "label": "shared/ON Prod Syndigo Acc",
+                                "value": "ON Prod Syndigo Acc"
                             },
                             "ref_class_id": {
                                 "value": "com-snaplogic-snaps-syndigopim-syndigoaccount"
@@ -401,8 +422,8 @@
                         "value": {
                             "label": {
                                 "expression": false,
-                                "label": "../shared/ON FS S3 Read Account",
-                                "value": "ON FS S3 Read Account"
+                                "label": "../shared/ON S3 Account",
+                                "value": "ON S3 Account"
                             },
                             "ref_class_id": {
                                 "value": "com-snaplogic-snaps-binary-binarys3account"
@@ -466,8 +487,8 @@
                         "value": "Validate & Execute"
                     },
                     "filePath": {
-                        "expression": false,
-                        "value": "s3:///onfs-import@s3.eu-central-1.amazonaws.com/cache/colors.json"
+                        "expression": true,
+                        "value": "\"s3:///\" +  _importAccount + \"@s3.eu-central-1.amazonaws.com/cache/colors.json\""
                     },
                     "getObjectTags": {
                         "value": false
