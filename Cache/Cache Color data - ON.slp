@@ -94,7 +94,28 @@
                 "value": []
             },
             "param_table": {
-                "value": []
+                "value": [
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "importAccount"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "on-import"
+                        }
+                    }
+                ]
             },
             "tags": {
                 "value": []
@@ -223,7 +244,7 @@
                         "value": {
                             "label": {
                                 "expression": false,
-                                "value": "ON FS Syndigo Account"
+                                "value": "ON Prod Syndigo Acc"
                             },
                             "ref_class_id": {
                                 "value": "com-snaplogic-snaps-syndigopim-syndigoaccount"
@@ -1073,8 +1094,8 @@
                         "value": {
                             "label": {
                                 "expression": false,
-                                "label": "shared/ON FS S3 Import Account",
-                                "value": "ON FS S3 Import Account"
+                                "label": "../shared/ON S3 Account",
+                                "value": "ON S3 Account"
                             },
                             "ref_class_id": {
                                 "value": "com-snaplogic-snaps-binary-binarys3account"
@@ -1152,7 +1173,7 @@
                     },
                     "filename": {
                         "expression": true,
-                        "value": "\"s3:///onfs-import@s3.eu-central-1.amazonaws.com/cache/colors.json\""
+                        "value": "\"s3:///\" + _importAccount + \"@s3.eu-central-1.amazonaws.com/cache/colors.json\""
                     },
                     "maxUploadThread": {
                         "value": 10
