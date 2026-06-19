@@ -2232,7 +2232,7 @@
                         "value": true
                     },
                     "path": {
-                        "value": "$variants"
+                        "value": "$variants[*]"
                     },
                     "showNullValues": {
                         "value": false
