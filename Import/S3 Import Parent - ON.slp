@@ -5,23 +5,41 @@
     "class_id": "com-snaplogic-pipeline",
     "class_version": 9,
     "link_map": {
-        "link101": {
+        "link103": {
+            "dst_id": "11111111-1111-1111-1111-000000000005",
+            "dst_view_id": "in",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output1"
+        },
+        "link106": {
+            "dst_id": "11111111-1111-1111-1111-000000000004",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output0"
+        },
+        "link108": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_view_id": "output101"
+        },
+        "link109": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "in",
+            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        },
+        "link110": {
             "dst_id": "11111111-1111-1111-1111-000000000001",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
         },
-        "link102": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000001",
-            "src_view_id": "output0"
-        },
-        "link103": {
-            "dst_id": "11111111-1111-1111-1111-000000000003",
+        "link111": {
+            "dst_id": "11111111-1111-1111-1111-000000000006",
             "dst_view_id": "in",
-            "src_id": "11111111-1111-1111-1111-000000000001",
-            "src_view_id": "output1"
+            "src_id": "11111111-1111-1111-1111-000000000005",
+            "src_view_id": "output101"
         }
     },
     "property_map": {
@@ -47,7 +65,7 @@
         },
         "input": {},
         "output": {
-            "11111111-1111-1111-1111-000000000002_output0": {
+            "11111111-1111-1111-1111-000000000004_output0": {
                 "label": {
                     "value": "Pipeline Execute - output0"
                 },
@@ -101,8 +119,8 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
-                "grid_x_int": 3,
-                "grid_y_int": 1,
+                "grid_x_int": 2,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -113,8 +131,32 @@
             },
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
                 "grid_x_int": 4,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {
@@ -129,10 +171,10 @@
                 "rot_tail_int": 0,
                 "source": ""
             },
-            "11111111-1111-1111-1111-000000000002": {
+            "11111111-1111-1111-1111-000000000004": {
                 "error": {},
-                "grid_x_int": 5,
-                "grid_y_int": 1,
+                "grid_x_int": 6,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -141,10 +183,10 @@
                 "rot_tail_int": 0,
                 "source": "snap catagory"
             },
-            "11111111-1111-1111-1111-000000000003": {
+            "11111111-1111-1111-1111-000000000005": {
                 "error": {},
-                "grid_x_int": 5,
-                "grid_y_int": 2,
+                "grid_x_int": 6,
+                "grid_y_int": 3,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -152,6 +194,18 @@
                 "rot_int": 0,
                 "rot_tail_int": 0,
                 "source": ""
+            },
+            "11111111-1111-1111-1111-000000000006": {
+                "error": {},
+                "grid_x_int": 7,
+                "grid_y_int": 3,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
             }
         },
         "pan_x_num": 0,
@@ -198,7 +252,7 @@
                 },
                 "info": {
                     "label": {
-                        "value": "S3 Browser - FS"
+                        "value": "S3 Browser"
                     },
                     "notes": {}
                 },
@@ -234,7 +288,7 @@
                     },
                     "maxKeys": {
                         "expression": false,
-                        "value": "All"
+                        "value": "5"
                     },
                     "maxRetries": {
                         "expression": false,
@@ -248,16 +302,183 @@
                         "value": false
                     },
                     "showAdvancedProperties": {
-                        "value": false
+                        "value": true
                     }
                 },
                 "view_serial": 101
             }
         },
         "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-flow-filter",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Filter"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "filterExpression": {
+                        "expression": true,
+                        "value": "!$objectKey.contains(\"_inprocess\")"
+                    },
+                    "nullSafeAccess": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-s3-s3copy",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "../shared/ON S3 Import Account",
+                                "value": "ON S3 Import Account"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-s3-s3account"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "S3 Copy - Rename with _inprocess"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "in": {
+                        "label": {
+                            "value": "Input view"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output101": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "maxRetries": {
+                        "expression": false,
+                        "value": 3
+                    },
+                    "multipartSize": {
+                        "expression": false,
+                        "value": 100
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "showAdvancedProperties": {
+                        "value": false
+                    },
+                    "sourceBucket": {
+                        "expression": true,
+                        "value": "_importAccount"
+                    },
+                    "sourceKey": {
+                        "expression": true,
+                        "value": "$objectKey"
+                    },
+                    "targetBucket": {
+                        "expression": true,
+                        "value": "_importAccount"
+                    },
+                    "targetKey": {
+                        "expression": true,
+                        "value": "$objectKey.split('/').slice(0, -1).join('/') + '/' + $objectKey.split('/').slice(-1)[0] + '_inprocess'"
+                    },
+                    "threadPoolSize": {
+                        "expression": false,
+                        "value": 10
+                    }
+                },
+                "view_serial": 101
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
             "class_id": "com-snaplogic-snaps-flow-copy",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "instance_id": "11111111-1111-1111-1111-000000000003",
             "property_map": {
                 "error": {
                     "error0": {
@@ -313,10 +534,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000002": {
+        "11111111-1111-1111-1111-000000000004": {
             "class_id": "com-snaplogic-snaps-flow-pipeexec",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "instance_id": "11111111-1111-1111-1111-000000000004",
             "property_map": {
                 "error": {
                     "error0": {
@@ -379,11 +600,11 @@
                         "value": [
                             {
                                 "paramName": {
-                                    "value": "objectKey"
+                                    "value": "targetObjectKey"
                                 },
                                 "paramValue": {
                                     "expression": true,
-                                    "value": "$objectKey"
+                                    "value": "$targetObjectKey"
                                 }
                             }
                         ]
@@ -421,10 +642,10 @@
                 "view_serial": 100
             }
         },
-        "11111111-1111-1111-1111-000000000003": {
+        "11111111-1111-1111-1111-000000000005": {
             "class_id": "com-snaplogic-snaps-s3-s3copy",
             "class_version": 1,
-            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "instance_id": "11111111-1111-1111-1111-000000000005",
             "property_map": {
                 "account": {
                     "account_ref": {
@@ -474,7 +695,16 @@
                         }
                     }
                 },
-                "output": {},
+                "output": {
+                    "output101": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
                 "settings": {
                     "executable_during_suggest": {
                         "value": false
@@ -502,7 +732,7 @@
                     },
                     "sourceKey": {
                         "expression": true,
-                        "value": "$objectKey"
+                        "value": "$targetObjectKey"
                     },
                     "targetBucket": {
                         "expression": true,
@@ -510,7 +740,93 @@
                     },
                     "targetKey": {
                         "expression": true,
-                        "value": "'processing/' + $objectKey"
+                        "value": "'processing/' + $targetObjectKey"
+                    },
+                    "threadPoolSize": {
+                        "expression": false,
+                        "value": 10
+                    }
+                },
+                "view_serial": 101
+            }
+        },
+        "11111111-1111-1111-1111-000000000006": {
+            "class_id": "com-snaplogic-snaps-s3-s3delete",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000006",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "../shared/ON S3 Import Account",
+                                "value": "ON S3 Import Account"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-s3-s3account"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "S3 Delete"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "in": {
+                        "label": {
+                            "value": "Input view"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {},
+                "settings": {
+                    "bucket": {
+                        "expression": true,
+                        "value": "_importAccount"
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "maxRetries": {
+                        "expression": false,
+                        "value": 3
+                    },
+                    "objectKey": {
+                        "expression": true,
+                        "value": "$sourceObjectKey.replace(\"_inprocess\", \"\")"
+                    },
+                    "passThrough": {
+                        "value": false
+                    },
+                    "showAdvancedProperties": {
+                        "value": false
                     },
                     "threadPoolSize": {
                         "expression": false,

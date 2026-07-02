@@ -22,12 +22,6 @@
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
-        },
-        "link116": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
-            "dst_view_id": "inputNaN",
-            "src_id": "11111111-1111-1111-1111-000000000001",
-            "src_view_id": "output0"
         }
     },
     "property_map": {
@@ -98,8 +92,8 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
-                "grid_x_int": 3,
-                "grid_y_int": 1,
+                "grid_x_int": 2,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -110,8 +104,8 @@
             },
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
-                "grid_x_int": 4,
-                "grid_y_int": 1,
+                "grid_x_int": 3,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -306,7 +300,7 @@
                         "value": "product"
                     },
                     "execution_mode": {
-                        "value": "Validate & Execute"
+                        "value": "Disabled"
                     },
                     "fetchSize": {
                         "expression": false,
@@ -399,7 +393,7 @@
                 },
                 "settings": {
                     "execution_mode": {
-                        "value": "Validate & Execute"
+                        "value": "Disabled"
                     },
                     "filterExpression": {
                         "expression": true,
@@ -456,16 +450,7 @@
                         "value": ""
                     }
                 },
-                "input": {
-                    "inputNaN": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
+                "input": {},
                 "output": {
                     "output0": {
                         "label": {

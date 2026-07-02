@@ -457,7 +457,7 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "{\n  groupKey: \"all\",\n  \n  colorId: $id,\n\n    code:\n      $name,\n\n    name:\n      $data.attributes.get('value')\n        ? $data.attributes.value.values[0].value\n        : \"\",\n\n    hex:\n      $data.attributes.get('hexcode')\n        ? $data.attributes.hexcode.values[0].value\n        : \"\",\n\n    library:\n      $data.attributes.get('colorstandard')\n        ? $data.attributes.colorstandard.values[0].value\n        : \"\",\n\n    nrf_code:\n      $data.attributes.get('nrfcode')\n        ? $data.attributes.nrfcode.values[0].value\n        : \"\"\n}"
+                                            "value": "{\n  groupKey: \"all\",\n  \n  colorId: $id,\n\n    code:\n      $name,\n\n    name:\n      $data.attributes.get('value')\n        ? $data.attributes.value.values[0].value\n        : \"\",\n\n    hex:\n      $data.attributes.get('hexcode')\n        ? $data.attributes.hexcode.values[0].value\n        : \"\",\n\n    library:\n      $data.attributes.get('colorstandard')\n        ? $data.attributes.colorstandard.values[0].value\n        : \"\",\n\n    nrf_code:\n      $data.attributes.get('nrfcode')\n        ? $data.attributes.nrfcode.values[0].value\n        : \"\",\n   standard_name :\n      $data.attributes.get('colorid')\n        ? $data.attributes.colorid.values[0].value\n        : \"\"\n}"
                                         },
                                         "targetPath": {
                                             "value": "$"
@@ -978,7 +978,7 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "{\n  colorLookup:\n    $group.reduce(\n      (lookup, c) =>\n        lookup.extend({\n          [c.colorId]: {\n            code: c.code,\n            name: c.name,\n            hex: c.hex,\n            library: c.library,\n            nrf_code: c.nrf_code\n          }\n        }),\n      {}\n    )\n}"
+                                            "value": "{\n  colorLookup:\n    $group.reduce(\n      (lookup, c) =>\n        lookup.extend({\n          [c.colorId]: {\n            code: c.code,\n            name: c.name,\n            hex: c.hex,\n            library: c.library,\n            nrf_code: c.nrf_code,\n            standard_name:c.standard_name\n          }\n        }),\n      {}\n    )\n}"
                                         },
                                         "targetPath": {
                                             "value": "$"
